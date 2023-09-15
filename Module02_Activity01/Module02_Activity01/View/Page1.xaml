@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module02_Activity01.View.Page1">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" Margin="20">
+            <Label Text="Subject Code" />
+            
+            <!-- Add {Binding [SET_NAME].[VARIBALE_NAME]} -->
+            <Entry Text="{Binding TaskModelSet.SubjectCode}" />
+            
+            <Label Text="Subject Title" />
+            <Entry Text="{Binding TaskModelSet.SubjectTitle}" />
+
+            <Label Text="Subject Unit" />
+            <Entry Text="{Binding TaskModelSet.Unit}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
